@@ -8,4 +8,7 @@
   <!-- manifest -->
   <project path="android" name="android" />
 
+  <!-- apps -->
+  <project path="packages/apps/notes" name="android_packages_apps_notes" />
+
 </manifest>
