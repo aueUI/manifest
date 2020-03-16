@@ -1,0 +1,20 @@
+<<<<<<< HEAD   (788722 Manifest for Android 10.0.0 Release 29 (QQ1D.200205.002))
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    Copyright (C) 2020 The aueUI project
+-->
+
+<manifest>
+
+  <!-- manifest -->
+  <project path="android" name="android" />
+
+  <!-- repo -->
+  <project path="repo-script" name="google-repo-script" revision="master" />
+
+  <!-- apps -->
+  <project path="packages/apps/notes" name="android_packages_apps_notes" />
+
+</manifest>
+>>>>>>> CHANGE (c950d0 manifest: fix undefined branch for google repo script)
