@@ -8,7 +8,7 @@
   <remove project="platform/packages/apps/DeskClock" />
 
   <!-- manifest -->
-  <project path="android" name="android" />
+  <project path="android" name="manifest" />
 
   <!-- repo -->
   <project path="repo-script" name="google-repo-script" revision="master" />
