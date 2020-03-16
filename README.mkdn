@@ -1,0 +1,135 @@
+<<<<<<< HEAD   (788722 Manifest for Android 10.0.0 Release 29 (QQ1D.200205.002))
+=======
+aueUI Project
+===========
+
+Getting Started
+---------------
+
+### Initializing the environment
+
+[Hint: This command updates the Ubuntu Packages List (Install Listing) and install the required version of Java]
+
+System based on deb package management:
+
+    ➜  sudo apt-get install openjdk-8-jdk
+
+System based on rpm package management:
+
+    ➜  sudo yum install java-1.8.0-openjdk-devel
+
+Let that install and then proceed. More copy and paste:
+
+[Hint: Running this command installs the other required packages to build android]
+
+System based on deb package management:
+
+    ➜ sudo apt-get update && sudo apt-get install git-core gnupg flex bison gperf libsdl1.2-dev libesd0-dev libwxgtk3.0-dev squashfs-tools build-essential zip curl libncurses5-dev zlib1g-dev openjdk-8-jre openjdk-8-jdk pngcrush schedtool libxml2 libxml2-utils xsltproc lzop libc6-dev schedtool g++-multilib lib32z1-dev lib32ncurses5-dev gcc-multilib maven tmux screen w3m ncftp liblz4-tool pngquant rsync
+
+System based on yum package management:
+
+    ➜ sudo yum update && sudo yum install git gnupg flex bison gperf SDL-devel esound-devel wxGTK3-devel squashfs-tools zip curl ncurses-devel zlib-devel java-1.8.0-openjdk-devel java-1.8.0-openjdk pngcrush schedtool libxml2-devel libxslt lzop glibc-devel schedtool gcc zlib-devel.i686 ncurses-devel.i686 gcc-c++ maven tmux screen w3m ncftp lz4 pngquant rsync ncurses-compat-libs	
+
+
+### Getting the Source
+
+Making required directories
+Obtaining the repo binary
+Adding repo binary to your path
+Giving the repo binary proper permissions
+Initializing an empty repo
+Syncing the repo
+Alright, so now we’re getting there. I have outlined the basics of what we’re about to do and broke them down as I know them. This is all pretty much going to be copy/paste so it’ll be fairly difficult to screw this up :) Make directory for the repo binary
+
+    ➜ mkdir ~/bin
+
+Add directory for the repo binary to its path
+
+    ➜ PATH=~/bin:$PATH
+
+Downloading repo binary and placing it in the proper directory
+
+    ➜ curl https://raw.githubusercontent.com/aueUI/google-repo-script/master/repo > ~/bin/repo
+
+Giving the repo binary the proper permissions
+
+    ➜ chmod a+x ~/bin/repo
+
+Creating directory for where the aueUI repo will be stored and synced
+
+    ➜ mkdir ~/aueUI && cd ~/aueUI
+
+Initializing the aueUI repo and downloading the manifest
+
+    ➜ repo init -u git://github.com/aueUI/android.git -b aueUI-10.0
+    
+Syncing the source
+
+[Hint: This might take a long time as the source is about 13GB+]
+
+    ➜  repo sync -c -f -j8 --force-sync --no-clone-bundle
+
+
+
+### Setting Up CCache
+
+CCache is a method of utilizing a specified storage space to speed up building. It can be referred to as the same caching your android device does to speed up application and system boot times. In this case, CCache will help build aueUI faster than standard build times (Able to cut-down 50% of time taken to build).
+
+To set up CCache, follow the following:
+
+    ➜ echo "export USE_CCACHE=1" >> ~/.bashrc
+
+    ➜ ~/aueUI/prebuilts/misc/linux-x86/ccache/ccache -M 50G
+
+-M 50G The number before the letter G at the end specifies the amount of space CCache can use in your storage unit. As such, ensure that not too much of space is specified as this might result in unexpected errors although, the more storage you have, its recommended to have more CCache as it will increase the build times. Most efficient build systems are able to utilize CCache to about 120G or more.
+
+### To build aueUI
+
+    ➜ cd ~/aueUI 
+    
+    ➜ . build/envsetup.sh
+
+    ➜ breakfast "device name"
+
+    ➜ brunch "device name"
+
+or make is all one line.
+
+    ➜ . build/envsetup.sh && breakfast "device name" && brunch "device name"
+
+Obtaining the zip created from the build process
+
+To get the zip file that has been built, navigate to the following directory and find for the zip file:
+
+    ➜ cd ~/aueUI/out/target/product/
+
+If you found it, then congratulations! If you didn't, try retrying the build process but before doing so, ensure you do the following to make sure your next build is clean;
+
+    ➜ cd ~/aueUI && make clean && repo sync -j16
+
+### Submitting patches
+
+Patches are always welcome! Please submit your patches via aueUI Gerrit Code Review Site!
+
+how to submit patches?
+
+It's just three steps:
+
+    ** Commit All your changes using git into repository.
+
+    ➜ repo start ${branch} ${path}
+
+    ➜ repo upload . --no-verify
+
+Still don't understand? 
+
+For example:
+
+If the repository you need to change is at 'hardware/qcom/audio', you have now modified a file inside called 'x.c'.
+However, this file is currently in the staging area, and now you need to commit your changes using 'git add x.c' and 'git commit'.
+Once the submission is complete, you will create a branch to be uploaded using 'repo start aueUI-10.0 hardware/qcom/audio' and then use 'repo upload hardware/qcom/audio --no-verify' to upload your patch to our server for code review.
+
+
+To view the status of your and others' patches, visit [aueUI Gerrit Code Review](http://flowertome.ticp.io/).
+
+>>>>>>> CHANGE (257bff manifest: Fix the wrong package name in the README.md)
