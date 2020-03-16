@@ -128,5 +128,5 @@ However, this file is currently in the staging area, and now you need to commit 
 Once the submission is complete, you will create a branch to be uploaded using 'repo start aueUI-10.0 hardware/qcom/audio' and then use 'repo upload hardware/qcom/audio --no-verify' to upload your patch to our server for code review.
 
 
-To view the status of your and others' patches, visit [aueUI Gerrit Code Review](https://flowertome.ticp.io/).
+To view the status of your and others' patches, visit [aueUI Gerrit Code Review](http://flowertome.ticp.io/gerrit).
 
