@@ -781,6 +781,12 @@
   <project path="tools/tradefederation/contrib" name="platform/tools/tradefederation/contrib" groups="pdk,tradefed" />
   <project path="tools/trebuchet" name="platform/tools/trebuchet" groups="tools,cts,pdk,pdk-cw-fs,pdk-fs" />
 
+<<<<<<< HEAD   (788722 Manifest for Android 10.0.0 Release 29 (QQ1D.200205.002))
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
+=======
+  <include name="snippets/aueUI.xml" />
+
+  <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" remote="aosp"  />
+>>>>>>> CHANGE (6aa946 manifest: Delete the wrong attribute in the include 'aueUI.x)
 
 </manifest>
