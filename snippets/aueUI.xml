@@ -7,7 +7,10 @@
 
   <!-- manifest -->
   <project path="android" name="android" />
-  
+
+  <!-- repo -->
+  <project path="repo-script" name="google-repo-script" />
+
   <!-- apps -->
   <project path="packages/apps/notes" name="android_packages_apps_notes" />
 
