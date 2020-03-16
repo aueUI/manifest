@@ -26,7 +26,7 @@ System based on deb package management:
 
 System based on yum package management:
 
-    ➜ sudo yum update && sudo yum install git gnupg flex bison gperf SDL-devel esound-devel wxGTK3-devel squashfs-tools zip curl ncurses-devel zlib-devel java-1.8.0-openjdk-devel java-1.8.0-openjdk pngcrush schedtool libxml2-devel xsltproc lzop glibc-devel schedtool gcc zlib-devel.i686 ncurses-devel.i686 gcc-c++ maven tmux screen w3m ncftp lz4 pngquant rsync ncurses-compat-libs	
+    ➜ sudo yum update && sudo yum install git gnupg flex bison gperf SDL-devel esound-devel wxGTK3-devel squashfs-tools zip curl ncurses-devel zlib-devel java-1.8.0-openjdk-devel java-1.8.0-openjdk pngcrush schedtool libxml2-devel libxslt lzop glibc-devel schedtool gcc zlib-devel.i686 ncurses-devel.i686 gcc-c++ maven tmux screen w3m ncftp lz4 pngquant rsync ncurses-compat-libs	
 
 
 ### Getting the Source
