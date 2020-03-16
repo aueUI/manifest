@@ -17,4 +17,7 @@
   <project path="packages/apps/notes" name="android_packages_apps_notes" />
   <project path="packages/apps/clock" name="android_packages_apps_clock" />
 
+  <!-- aueUI -->
+  <project path="vendor/aueUI" name="android_vendor_aueUI" />
+
 </manifest>
