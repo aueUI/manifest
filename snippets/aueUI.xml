@@ -6,6 +6,10 @@
 <manifest>
 
   <remove project="platform/packages/apps/DeskClock" />
+  <remove project="platform/hardware/qcom/sm8150/data/ipacfg-mgr" />
+
+ <!-- hardware -->
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" revision="aueUI-10.0" />
 
   <!-- manifest -->
   <project path="android" name="manifest" />
