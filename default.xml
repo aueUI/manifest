@@ -40,7 +40,6 @@
   <project path="development" name="platform/development" groups="developers,pdk-cw-fs,pdk-fs" remote="aosp"  />
   <project path="device/generic/goldfish" name="device/generic/goldfish" groups="pdk" remote="aosp"/>
   <project path="device/generic/goldfish-opengl" name="device/generic/goldfish-opengl" groups="pdk" remote="aosp"/>
-  <project path="device/generic/mini-emulator-armv7-a-neon" name="device/generic/mini-emulator-armv7-a-neon" groups="pdk" remote="aosp"/>
   <project path="device/generic/mini-emulator-x86" name="device/generic/mini-emulator-x86" groups="pdk" remote="aosp"/>
   <project path="device/generic/mini-emulator-x86_64" name="device/generic/mini-emulator-x86_64" groups="pdk" remote="aosp"/>
   <project path="device/generic/opengl-transport" name="device/generic/opengl-transport" groups="pdk" remote="aosp"/>
