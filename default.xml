@@ -51,7 +51,6 @@
   <project path="device/generic/mini-emulator-x86_64" name="device/generic/mini-emulator-x86_64" groups="pdk" remote="aosp"/>
   <project path="device/generic/opengl-transport" name="device/generic/opengl-transport" groups="pdk" remote="aosp"/>
   <project path="device/generic/qemu" name="device/generic/qemu" groups="pdk" remote="aosp"/>
-  <project path="device/generic/trusty" name="device/generic/trusty" groups="pdk" remote="aosp"/>
   <project path="device/generic/uml" name="device/generic/uml" groups="device,pdk" remote="aosp"/>
   <project path="device/generic/x86" name="device/generic/x86" groups="pdk" remote="aosp"/>
   <project path="device/generic/x86_64" name="device/generic/x86_64" groups="pdk" remote="aosp"/>
